@@ -1,24 +1,64 @@
-<header class="bg-gradient-to-r from-pink-600 to-purple-600 shadow-md">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StyleView</title>
+<script src="https://cdn.tailwindcss.com"></script>
 
+<style>
+  body {
+    background: linear-gradient(to right, #ffe4ec, #ffffff);
+  }
+</style>
+</head>
+
+<body class="font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow-md">
   <div class="container mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="text-3xl font-bold text-pink-600">StyleView</h1>
 
-    <h1 class="text-3xl font-bold text-white">StyleView</h1>
-
-    <nav class="flex gap-3">
-
-      <a href="#" class="bg-white text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">Home</a>
-
-      <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-pink-600">Fashion</a>
-
-      <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-pink-600">Jewelry</a>
-
-      <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-pink-600">Celebrity</a>
-
-      <a href="#" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-pink-600">Trending</a>
-
+    <nav class="space-x-6">
+      <a href="#" class="text-gray-700 hover:text-pink-600">Home</a>
+      <a href="#" class="text-gray-700 hover:text-pink-600">About</a>
+      <a href="#" class="text-gray-700 hover:text-pink-600">Contact</a>
     </nav>
+  </div>
+</header>
 
+<!-- HERO -->
+<section class="text-center py-20 px-6">
+  <h2 class="text-5xl font-bold text-pink-600">Discover Your Style</h2>
+  <p class="mt-4 text-gray-600">
+    Explore fashion trends and style inspiration.
+  </p>
+</section>
+
+<!-- CARDS -->
+<section class="container mx-auto px-6 grid md:grid-cols-2 gap-8 pb-20">
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+    <h3 class="text-xl font-bold text-pink-600">Minimal Looks</h3>
+    <p class="text-gray-600 mt-2">
+      Clean, elegant and simple outfits ideas.
+    </p>
   </div>
 
-</header>
-<!-- HEADER END -->
+  <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+    <h3 class="text-xl font-bold text-pink-600">Luxury Fashion</h3>
+    <p class="text-gray-600 mt-2">
+      Premium styles and classy fashion vibes.
+    </p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-pink-600 text-white text-center py-6">
+  <p>© 2026 StyleView | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
