@@ -7,57 +7,95 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-  body {
-    background: linear-gradient(to right, #ffe4ec, #ffffff);
-  }
+body{
+  background:#fafafa;
+}
 </style>
 </head>
 
-<body class="font-sans">
+<body>
 
-<!-- HEADER -->
-<header class="bg-white shadow-md">
-  <div class="container mx-auto flex justify-between items-center px-6 py-4">
+<!-- TOP BAR -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
     <h1 class="text-3xl font-bold text-pink-600">StyleView</h1>
 
-    <nav class="space-x-6">
-      <a href="#" class="text-gray-700 hover:text-pink-600">Home</a>
-      <a href="#" class="text-gray-700 hover:text-pink-600">About</a>
-      <a href="#" class="text-gray-700 hover:text-pink-600">Contact</a>
+    <nav class="flex gap-3 flex-wrap">
+
+      <a class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm">Home</a>
+      <a class="border px-4 py-2 rounded-full text-sm hover:bg-pink-600 hover:text-white">Fashion</a>
+      <a class="border px-4 py-2 rounded-full text-sm hover:bg-pink-600 hover:text-white">Jewelry</a>
+      <a class="border px-4 py-2 rounded-full text-sm hover:bg-pink-600 hover:text-white">Celebrity</a>
+      <a class="border px-4 py-2 rounded-full text-sm hover:bg-pink-600 hover:text-white">Trending</a>
+
     </nav>
+
   </div>
 </header>
 
 <!-- HERO -->
-<section class="text-center py-20 px-6">
-  <h2 class="text-5xl font-bold text-pink-600">Discover Your Style</h2>
-  <p class="mt-4 text-gray-600">
-    Explore fashion trends and style inspiration.
+<section class="text-center py-16 px-6">
+  <h2 class="text-5xl font-bold text-gray-800">
+    Latest Fashion Trends & Style Ideas
+  </h2>
+
+  <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+    Discover beauty, fashion, celebrity looks and luxury lifestyle inspiration.
   </p>
 </section>
 
-<!-- CARDS -->
-<section class="container mx-auto px-6 grid md:grid-cols-2 gap-8 pb-20">
+<!-- BLOG POSTS -->
+<section class="container mx-auto px-6 grid md:grid-cols-3 gap-8 pb-16">
 
-  <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-    <h3 class="text-xl font-bold text-pink-600">Minimal Looks</h3>
-    <p class="text-gray-600 mt-2">
-      Clean, elegant and simple outfits ideas.
-    </p>
+  <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+    <img src="https://source.unsplash.com/400x300/?fashion" class="w-full">
+    <div class="p-4">
+      <p class="text-pink-600 text-sm">Fashion</p>
+      <h3 class="font-bold text-lg">Street Style Trends 2026</h3>
+    </div>
   </div>
 
-  <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-    <h3 class="text-xl font-bold text-pink-600">Luxury Fashion</h3>
-    <p class="text-gray-600 mt-2">
-      Premium styles and classy fashion vibes.
-    </p>
+  <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+    <img src="https://source.unsplash.com/400x300/?jewelry" class="w-full">
+    <div class="p-4">
+      <p class="text-pink-600 text-sm">Jewelry</p>
+      <h3 class="font-bold text-lg">Luxury Jewelry Collection</h3>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+    <img src="https://source.unsplash.com/400x300/?celebrity" class="w-full">
+    <div class="p-4">
+      <p class="text-pink-600 text-sm">Celebrity</p>
+      <h3 class="font-bold text-lg">Celebrity Style Inspiration</h3>
+    </div>
   </div>
 
 </section>
 
+<!-- TRENDING -->
+<section class="bg-pink-50 py-12 px-6">
+  <h2 class="text-3xl font-bold text-center mb-8">🔥 Trending Now</h2>
+
+  <div class="container mx-auto grid md:grid-cols-2 gap-6">
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg">Minimal Outfit Ideas</h3>
+      <p class="text-gray-500">Clean and modern fashion looks for everyday wear.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg">Luxury Fashion Trends</h3>
+      <p class="text-gray-500">High-end designer outfits and premium styles.</p>
+    </div>
+
+  </div>
+</section>
+
 <!-- FOOTER -->
-<footer class="bg-pink-600 text-white text-center py-6">
-  <p>© 2026 StyleView | Designed with ❤️</p>
+<footer class="bg-black text-white text-center py-6">
+  <p>© 2026 StyleView | All Rights Reserved</p>
 </footer>
 
 </body>
